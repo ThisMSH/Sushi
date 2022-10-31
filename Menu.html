@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hitaka's Sushi restaurant">
+    <title>Hitaka's Sushi Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <script src="js/script.js" async></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <nav>
+            <ul class="navleft">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <a href="Home.html" class="Logo">
+            <img src="img/Logo_shadow_x2.png" alt="Hitaka Logo" class="Hover-logo">
+            <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+        </a>
+        <nav>
+            <ul class="navright">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="bx bx-menu" id="menu-icon"></nav>
+        <nav class="nav-mobile">
+            <ul class="">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Top page -->
+    <section class="top">
+        <div class="top-content">
+            <p>Welcome to</p>
+            <div>
+                <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+                <h1>Hitaka’s Sushi<br>Restaurant</h1>
+            </div>
+            <button class="go-to-cart-btn" onClick="document.getElementById('my-cart').scrollIntoView();">
+                <h2>Go to your<br>cart</h2>
+            </button>
+        </div>
+    </section>
+
+    <!-- Top menu -->
+
+    <section class="">
+        <div class="des">
+            <div class="">
+                <h2 class="title">Menu</h2>
+                <br><br><br>
+                <h2>Our Categories</h2>
+                <br><br>
+                <div class="category">
+                    <button class="category-btn all-cat-btn" type="button" onclick="category(event, 'cat-section')">
+                        <div>
+                            <img class="brush" src="img/brush-1.png" alt="Category background">
+                            <p>All</p>
+                        </div>
+                        <img class="cat-image" src="img/icons/all.png" alt="Category image">
+                    </button>
+                    <button class="category-btn" type="button" onclick="category(event, 'cat-section1')">
+                            <div>
+                                <img class="brush" src="img/brush-1.png" alt="Category background">
+                                <p>Category 1</p>
+                            </div>
+                            <img class="cat-image" src="img/icons/001.png" alt="Category image">
+                    </button>
+                    <button class="category-btn" type="button" onclick="category(event, 'cat-section2')">
+                        <div>
+                            <img class="brush" src="img/brush-1.png" alt="Category background">
+                            <p>Category 2</p>
+                        </div>
+                        <img class="cat-image" src="img/icons/002.png" alt="Category image">
+                    </button>
+                    <button class="category-btn" type="button" onclick="category(event, 'cat-section3')">
+                        <div>
+                            <img class="brush" src="img/brush-1.png" alt="Category background">
+                            <p>Category 3</p>
+                        </div>
+                        <img class="cat-image" src="img/icons/003.png" alt="Category image">
+                    </button>
+                    <button class="category-btn" type="button" onclick="category(event, 'cat-section4')">
+                        <div>
+                            <img class="brush" src="img/brush-1.png" alt="Category background">
+                            <p>Category 4</p>
+                        </div>
+                        <img class="cat-image" src="img/icons/004.png" alt="Category image">
+                    </button>
+                    <button class="category-btn" type="button" onclick="category(event, 'cat-section5')">
+                        <div>
+                            <img class="brush" src="img/brush-1.png" alt="Category background">
+                            <p>Category 5</p>
+                        </div>
+                        <img class="cat-image" src="img/icons/005.png" alt="Category image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Category 1 -->
+    
+    <section class="category-section category-section1" id="cat-section1">
+        <div class="des">
+            <div class="">
+                <div class="top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <h2>Category 1</h2>
+                </div>
+                <br><br>
+                <ul class="food-list">
+                    <li>
+                        <p class="item-name">Nigiri 1</p>
+                        <img class="cat-image" src="img/icons/01.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">19.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 2</p>
+                        <img class="cat-image" src="img/icons/02.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">22.33 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 3</p>
+                        <img class="cat-image" src="img/icons/03.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">43.25 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 4</p>
+                        <img class="cat-image" src="img/icons/04.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">67.45 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 5</p>
+                        <img class="cat-image" src="img/icons/05.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">87.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 6</p>
+                        <img class="cat-image" src="img/icons/06.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">69.69 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 7</p>
+                        <img class="cat-image" src="img/icons/07.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">66.45 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Nigiri 8</p>
+                        <img class="cat-image" src="img/icons/08.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">23.32 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 2 -->
+
+    <section class="category-section category-section2" id="cat-section2">
+        <div class="des">
+            <div class="">
+                <div class="top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <h2>Category 2</h2>
+                </div>
+                <br><br>
+                <ul class="food-list">
+                    <li>
+                        <p class="item-name">Sashimi 1</p>
+                        <img class="cat-image" src="img/icons/09.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">32 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 2</p>
+                        <img class="cat-image" src="img/icons/10.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">1.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 3</p>
+                        <img class="cat-image" src="img/icons/11.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">5.11 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 4</p>
+                        <img class="cat-image" src="img/icons/12.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">89.12 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 5</p>
+                        <img class="cat-image" src="img/icons/13.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">100 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 6</p>
+                        <img class="cat-image" src="img/icons/14.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">234.2 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 7</p>
+                        <img class="cat-image" src="img/icons/15.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">657 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sashimi 8</p>
+                        <img class="cat-image" src="img/icons/16.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">132.23 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 3 -->
+
+    <section class="category-section category-section3" id="cat-section3">
+        <div class="des">
+            <div class="">
+                <div class="top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <h2>Category 3</h2>
+                </div>
+                <br><br>
+                <ul class="food-list">
+                    <li>
+                        <p class="item-name">Uramaki 1</p>
+                        <img class="cat-image" src="img/icons/17.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">55.33 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 2</p>
+                        <img class="cat-image" src="img/icons/18.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">12.22 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 3</p>
+                        <img class="cat-image" src="img/icons/19.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">08.67 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 4</p>
+                        <img class="cat-image" src="img/icons/20.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">42.00 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 5</p>
+                        <img class="cat-image" src="img/icons/21.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">122.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 6</p>
+                        <img class="cat-image" src="img/icons/22.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">2.929 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 7</p>
+                        <img class="cat-image" src="img/icons/23.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">4.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Uramaki 8</p>
+                        <img class="cat-image" src="img/icons/24.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">10.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 4 -->
+
+    <section class="category-section category-section4" id="cat-section4">
+        <div class="des">
+            <div class="">
+                <div class="top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <h2>Category 4</h2>
+                </div>
+                <br><br>
+                <ul class="food-list">
+                    <li>
+                        <p class="item-name">Temaki 1</p>
+                        <img class="cat-image" src="img/icons/25.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">56.77 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 2</p>
+                        <img class="cat-image" src="img/icons/26.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">78.45 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 3</p>
+                        <img class="cat-image" src="img/icons/27.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">52.14 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 4</p>
+                        <img class="cat-image" src="img/icons/28.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">78.56 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 5</p>
+                        <img class="cat-image" src="img/icons/29.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">76.89 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 6</p>
+                        <img class="cat-image" src="img/icons/30.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">56.43 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 7</p>
+                        <img class="cat-image" src="img/icons/31.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">34.22 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Temaki 8</p>
+                        <img class="cat-image" src="img/icons/32.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">11.11 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category 5 -->
+
+    <section class="category-section category-section5" id="cat-section5">
+        <div class="des">
+            <div class="">
+                <div class="top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <h2>Category 5</h2>
+                </div>
+                <br><br>
+                <ul class="food-list">
+                    <li>
+                        <p class="item-name">Sake 1</p>
+                        <img class="cat-image" src="img/icons/33.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">12.50 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 2</p>
+                        <img class="cat-image" src="img/icons/34.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">59.76 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 3</p>
+                        <img class="cat-image" src="img/icons/35.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">77.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 4</p>
+                        <img class="cat-image" src="img/icons/36.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">12.11 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 5</p>
+                        <img class="cat-image" src="img/icons/37.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">10.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 6</p>
+                        <img class="cat-image" src="img/icons/38.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">12.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 7</p>
+                        <img class="cat-image" src="img/icons/39.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">34.99 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="item-name">Sake 8</p>
+                        <img class="cat-image" src="img/icons/40.png" alt="Food image">
+                        <div>
+                            <p class="item-cart-price">67.77 $</p>
+                            <button type="button" class="add-button">Add to cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart content -->
+
+    <section class="" id="my-cart">
+        <div class="des cart-section">
+            <div class="">
+                <div class="cart-title top-food-list">
+                    <img src="img/brush-2.png" alt="Category background">
+                    <span><i class='bx bx-cart' ></i></span>
+                    <h2>- Your cart</h2>
+                </div>
+                <br>
+                <div class="cart-name-price">
+                    <span>Name</span>
+                    <span>Price</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-contents">
+        <div class="des cart-section cart-items-list">
+            
+        </div>
+        <div class="purchase">
+            <div>
+                <span class="total-purchase">Total:</span>
+                <span class="total-price">0 $</span>
+            </div>
+            <button type="button" class="purchase-button">Purchase</button>
+        </div>
+    </section>
+    
+    <!-- Bottom content -->
+
+    <section class="bottom">
+        <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+        <div>
+            <h2>Our Schedules</h2>
+            <p>
+                <span>From Monday to Friday:</span><br>
+                09:00 - 22:00<br>
+                <span>Weekend:</span><br>
+                10:00 - 00:00
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="main">
+            <div class="child">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="https://goo.gl/maps/4gL8yXGgx6CtX7Di7" target="_blank">Location</a></li>
+                    <li><a href="tel:+81 867 6545">+81 867 6545</a></li>
+                    <li><a href="mailto:hitaka@sushi.jp">hitaka@sushi.jp</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">FAQ</a></li>
+                    <li><a href="tel:+81 867 6545">+81 867 6545</a></li>
+                    <li><a href="mailto:hitaka@sushi.jp">hitaka@sushi.jp</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Socials</h4>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/" target="_blank" class="fb"><i class='bx bxl-facebook-square'></i>  Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="ig"><i class='bx bxl-instagram-alt' ></i>  Instagram</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank" class="tw"><i class='bx bxl-twitter' ></i>  Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="tt"><img src="img/icons/tiktok-logo.png" alt="TikTok icon"><img class="tt-colored" src="img/icons/tiktok.png" alt="TikTok icon">  TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright ©2022 All rights reserved | Hitaka’s Group</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

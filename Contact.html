@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Hitaka's Sushi restaurant">
+    <title>Hitaka's Sushi Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <nav>
+            <ul class="navleft">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <a href="Home.html" class="Logo">
+            <img src="img/Logo_shadow_x2.png" alt="Hitaka Logo" class="Hover-logo">
+            <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+        </a>
+        <nav>
+            <ul class="navright">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="bx bx-menu" id="menu-icon"></nav>
+        <nav class="nav-mobile">
+            <ul class="">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Top page -->
+    <section class="top">
+        <div class="top-content">
+            <p>Welcome to</p>
+            <div>
+                <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+                <h1>Hitaka’s Sushi<br>Restaurant</h1>
+            </div>
+            <a href="Menu.html">
+                <div class="discover-button">
+                    <h2>Discover our<br>Menu now!</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Content Part 1 -->
+
+    <section class="">
+        <div class="des">
+            <div class="">
+                <h2>Contact Us</h2>
+                <br>
+                <p>
+                    Do you have a question regarding our restaurant or service? Do you have a complain that you want to file? Or you just have a feedback that you want to share with us? Don’t hesitate to contact us via the form below.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+
+    <form action="" method="post">
+        <div class="contact-left">
+            <h3>Contact Us</h3>
+            <ul class="contact-list">
+                <li>
+                    <a href="https://goo.gl/maps/4gL8yXGgx6CtX7Di7" target="_blank">
+                        <i class='bx bxs-map' ></i>
+                        <p>Japan, 〒103-0014 Tokyo, Chuo City</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+81 867 6545">
+                        <i class='bx bxs-phone' ></i>
+                        <p>+81 867 6545</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:hitaka@sushi.jp">
+                        <i class='bx bxs-envelope' ></i>
+                        <p>hitaka@sushi.jp</p>
+                    </a>
+                </li>
+                <li class="contact-socials">
+                    <a href="https://www.facebook.com/" target="_blank" class="fb-contact-us"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="ig-contact-us"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://twitter.com/home" target="_blank" class="tw-contact-us"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="tt-contact-us"><i class='bx bxl-tiktok'></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-right">
+            <h3>Give us your feedback</h3>
+			<div class="input-box">
+				<label>Your full name <span class="red-star">*</span></label>
+				<input placeholder="Your full name" type="text" name="userFullName" required>
+			</div>
+			<div class="input-box">
+                <label>Your E-mail <span class="red-star">*</span></label>
+				<input placeholder="Your E-mail" type="email" name="userEmail" required>
+			</div>
+			<div class="input-box">
+                <label>Your phone number <span class="red-star">*</span></label>
+				<input placeholder="Your phone number" type="tel" name="userPhoneNumber" required>
+			</div>	
+			<div class="input-msg">
+				<label>Your message <span class="red-star">*</span></label>
+                <br>
+				<textarea placeholder="Write your feedback here..." name="userMessage" id="" cols="30" rows="5" required></textarea>
+			</div>
+			<div class="input-buttons">
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</div>
+			<p class="required-pos"><span class="red-star">*</span> Required</p>
+        </div>
+    </form>
+
+    <!-- Below contact form -->
+
+    <section class="">
+        <img class="icons-img" src="img/br01.png" alt="Sushi icons">
+    </section>
+
+    <!-- Content Part 2 -->
+
+    <section class="bottom">
+        <img src="img/Logo_shadow.png" alt="Hitaka Logo">
+        <div>
+            <h2>Our Schedules</h2>
+            <p>
+                <span>From Monday to Friday:</span><br>
+                09:00 - 22:00<br>
+                <span>Weekend:</span><br>
+                10:00 - 00:00
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="main">
+            <div class="child">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="https://goo.gl/maps/4gL8yXGgx6CtX7Di7" target="_blank">Location</a></li>
+                    <li><a href="tel:+81 867 6545">+81 867 6545</a></li>
+                    <li><a href="mailto:hitaka@sushi.jp">hitaka@sushi.jp</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">FAQ</a></li>
+                    <li><a href="tel:+81 867 6545">+81 867 6545</a></li>
+                    <li><a href="mailto:hitaka@sushi.jp">hitaka@sushi.jp</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <h4>Socials</h4>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/" target="_blank" class="fb"><i class='bx bxl-facebook-square'></i>  Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="ig"><i class='bx bxl-instagram-alt' ></i>  Instagram</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank" class="tw"><i class='bx bxl-twitter' ></i>  Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="tt"><img src="img/icons/tiktok-logo.png" alt="TikTok icon"><img class="tt-colored" src="img/icons/tiktok.png" alt="TikTok icon">  TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyright ©2022 All rights reserved | Hitaka’s Group</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

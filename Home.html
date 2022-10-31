@@ -11,11 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="navbar">
         <nav>
             <ul class="navleft">
                 <li><a href="Home.html">Home</a></li>
@@ -28,6 +28,15 @@
         </a>
         <nav>
             <ul class="navright">
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="bx bx-menu" id="menu-icon"></nav>
+        <nav class="nav-mobile">
+            <ul class="">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Contact.html">Contact Us</a></li>
             </ul>
@@ -75,7 +84,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tenetur maxime temporibus nobis eaque sequi praesentium. aque facere recusandae aliquid</p>
                 <br>
                 <a href="Menu.html">
-                    <div class="discover-button">
+                    <div class="discover-button" id="discover-btn">
                         <h2>Discover our<br>Menu now!</h2>
                     </div>
                 </a>
@@ -109,11 +118,10 @@
     </section>
 
     <!-- Footer -->
-
-    <section class="footer-section">
+    <footer class="footer-section">
         <div class="main">
             <div class="child">
-                <h3>Links</h3>
+                <h4>Links</h4>
                 <ul>
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
@@ -122,7 +130,7 @@
                 </ul>
             </div>
             <div class="child">
-                <h3>Contact</h3>
+                <h4>Contact</h4>
                 <ul>
                     <li><a href="Contact.html">Contact Us</a></li>
                     <li><a href="https://goo.gl/maps/4gL8yXGgx6CtX7Di7" target="_blank">Location</a></li>
@@ -131,7 +139,7 @@
                 </ul>
             </div>
             <div class="child">
-                <h3>Support</h3>
+                <h4>Support</h4>
                 <ul>
                     <li><a href="Contact.html">Contact Us</a></li>
                     <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">FAQ</a></li>
@@ -140,15 +148,19 @@
                 </ul>
             </div>
             <div class="child">
-                <h3>Socials</h3>
+                <h4>Socials</h4>
                 <ul class="socials">
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square'></i>  Facebook</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt' ></i>  Instagram</a></li>
-                    <li><a href="https://twitter.com/home" target="_blank"><i class='bx bxl-twitter' ></i>  Twitter</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class='bx bxl-tiktok' ></i>  TikTok</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="fb"><i class='bx bxl-facebook-square'></i>  Facebook</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="ig"><i class='bx bxl-instagram-alt' ></i>  Instagram</a></li>
+                    <li><a href="https://twitter.com/home" target="_blank" class="tw"><i class='bx bxl-twitter' ></i>  Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="tt"><img src="img/icons/tiktok-logo.png" alt="TikTok icon"><img class="tt-colored" src="img/icons/tiktok.png" alt="TikTok icon">  TikTok</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+        <div class="copyrights">
+            <p>Copyright ©2022 All rights reserved | Hitaka’s Group</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
