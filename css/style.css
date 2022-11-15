@@ -63,7 +63,7 @@ header {
     display: flex;
     align-items: center;
     background: transparent;
-    transition: ease .3s;
+    transition: .3s ease;
     justify-content: space-around;
     z-index: 100;
 }
@@ -95,7 +95,7 @@ form {
 .Hover-logo{
     position: absolute;
     opacity: 0;
-    transition: ease  .5s;
+    transition: .5s ease;
 }
 .Hover-logo:hover{
     opacity: 1;
@@ -115,7 +115,7 @@ form {
     -webkit-text-fill-color: var(--text-color);
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--stroke-color);
-    transition: ease .50s;
+    transition: .5s ease;
 }
 .navleft a:hover, .nav-mobile a:hover {
     -webkit-text-fill-color: var(--title-color);
@@ -142,7 +142,7 @@ form {
     -webkit-text-fill-color: var(--text-color);
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--stroke-color);
-    transition: ease .50s;
+    transition: .5s ease;
 }
 .navright a:hover{
     -webkit-text-fill-color: var(--title-color);
@@ -167,7 +167,7 @@ form {
 .top{
     width: 100%;
     height: 100vh;
-    min-height: 1080px; /* check */
+    min-height: 1080px;
     overflow: hidden;
     position: relative;
     background-image: url("../img/home_1.jpg");
@@ -219,7 +219,7 @@ form {
     align-items: center;
     border: 3px solid var(--title-color);
     border-radius: 15px;
-    transition: ease .5s;
+    transition: .5s ease;
 }
 .go-to-cart-btn {
     cursor: pointer;
@@ -288,7 +288,7 @@ form {
 .child ul li a {
 	font-size: 26px;
 	display: block;
-	transition: .3s;
+	transition: .3s ease;
 }
 .child ul li a:hover {
 	font-weight: bolder;
@@ -299,24 +299,24 @@ form {
 }
 .fb:hover * {
     color: #4267B2;
-    transition: ease .5s;
+    transition: .5s ease;
 }
 .ig:hover * {
     background: -webkit-linear-gradient(270deg, #405DE6 0%, #833AB4 30%, #E1306C 60%, #FFDC80 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: ease-in-out .5s;
+    transition: .5s ease;
 }
 .tw:hover * {
     color: #1DA1F2;
-    transition: ease .5s;
+    transition: .5s ease;
 }
 .tt-colored {
     width: 30px;
     position: absolute;
     left: 66%;
     opacity: 0;
-    transition: ease .5s;
+    transition: .5s ease;
 }
 .tt:hover * {
     opacity: 1;
@@ -417,7 +417,7 @@ form {
 }
 .contact-socials a {
     margin: 5%;
-    transition: ease-in-out .3s;
+    transition: .3s ease;
 }
 .contact-socials a:hover {
     transform: scale(130%);
@@ -525,7 +525,7 @@ label {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    transition: ease-in-out .2s;
+    transition: .2s ease-in-out;
 }
 .category button:hover {
     box-shadow: 0 0 30px rgb(255, 255, 255);
@@ -582,7 +582,7 @@ label {
 }
 .food-list li {
     position: relative;
-    background-color: rgb(255 255 255 / 20%);
+    background-color: rgb(255 255 255 / 15%);
     border-radius: 15px;
     border: 3px solid var(--title-color);
     width: 23%;
@@ -597,9 +597,6 @@ label {
 .food-list li p {
     font-size: 36px;
     font-weight: sans-serif;
-    -webkit-text-fill-color: var(--text-color);
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: var(--stroke-color);
 }
 .food-list li img {
     width: 60%;
@@ -617,14 +614,20 @@ label {
 }
 .food-list li div button, .item button {
     width: 50%;
-    height: 50px;
-    min-height: fit-content;
+    min-height: 50px;
+    max-height: fit-content;
     border: 2px solid #000;
     border-radius: 15px;
     background-color: var(--title-color);
     color: #000;
     font-size: 22px;
     cursor: pointer;
+}
+.add-button-mobile {
+    display: none !important;
+}
+.add-button-desktop {
+    display: block;
 }
 .cart-contents {
     margin-top: -112px;
@@ -667,6 +670,10 @@ label {
     padding: 30px 0;
     margin-top: -51px;
 }
+.item2 {
+    display: flex;
+    justify-content: space-between;
+}
 .item img {
     width: 20%;
 }
@@ -675,8 +682,7 @@ label {
 }
 .item button {
     width: 30%;
-    margin-left: 25%;
-    transition: ease-in-out .1s;
+    transition: .2s ease-in-out;
 }
 .item button:hover {
     background-color: red;
@@ -702,7 +708,7 @@ label {
     font-weight: bold;
     margin: 10px 0;
     cursor: pointer;
-    transition: ease-in-out .2s;
+    transition: .2s ease-in-out;
 }
 .purchase button:hover {
     transform: scale(110%);
@@ -727,10 +733,12 @@ label {
     background-color: transparent;
     cursor: pointer;
     font-size: 60px;
-    transition: ease-in-out .5s;
+    transition: .5s ease-in-out;
 }
 #myTopBtn i {
-    color: var(--title-color);
+    -webkit-text-fill-color: var(--title-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--stroke-color);
 }
 
 @keyframes change {
@@ -843,7 +851,7 @@ label {
         padding: 40px 3%;
         margin: 80px 0 0 0;
         width: 90vw;
-        height: 1150px;  /* check */
+        height: 1150px;
         min-height: fit-content;
     }
     .Logo {
@@ -900,7 +908,7 @@ label {
         height: 100vh;
         background-image: url("../img/slide_menu.png");
         padding: 120px 30px;
-        transition: all .5s;
+        transition: .5s;
     }
     .nav-mobile a {
         margin: 20px 0;
@@ -908,7 +916,7 @@ label {
     .open {
         right: 0;
     }
-    .top{ /* check */
+    .top{
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -941,7 +949,7 @@ label {
         width: 90vw;
         height: fit-content;
         font-size: 11vw;
-        transition: ease .5s;
+        transition: .5s ease;
     }
     .discover-button h2 {
         padding: 20px 0;
@@ -976,6 +984,11 @@ label {
         height: 136.7vw;
         overflow: auto;
         border-radius: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .des-mobile-2 {
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/home_page2.jpg);
     }
     .des div a {
         display: flex;
@@ -1005,7 +1018,7 @@ label {
         left: 10vw;
         top: 0;
         width: 80vw;
-        height: 500px; /* check */
+        height: 500px;
         padding: 5% 0 0 7%;
         border-radius: 15px 15px 0px 0px;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
@@ -1031,7 +1044,7 @@ label {
     }
     .contact-socials a {
         margin: 5%;
-        transition: ease-in-out .3s;
+        transition: .3s ease-in-out;
     }
     .contact-right {
         position: absolute;
@@ -1204,9 +1217,6 @@ label {
     .food-list li div p {
         font-size: 6.5vw;
     }
-    .food-list li div button, .item button {
-        height: 80px;
-    }
     .cart-contents {
         margin-top: -122px;
     }
@@ -1215,6 +1225,17 @@ label {
     }
     .cart-items div {
         padding: 20px 0;
+    }
+    .add-button-mobile {
+        display: block !important;
+        min-height: 60px;
+    }
+    .add-button-mobile::before {
+        color: #000;
+        font-size: 32px;
+    }
+    .add-button-desktop {
+        display: none;
     }
     .item {
         display: flex;
@@ -1226,14 +1247,14 @@ label {
         width: 70%;
     }
     .item span {
-        margin-left: none;
+        margin-left: 0;
         font-size: 7vw;
     }
     .item button {
         width: 70%;
         height: 50px;
         margin-left: none;
-        transition: ease-in-out .1s;
+        transition: .1s ease-in-out;
     }
     .purchase {
         border: 3px solid var(--title-color);
@@ -1242,7 +1263,7 @@ label {
         border: 2px solid #000;
         width: 35%;
         height: 60px;
-        font-size: 32px;
+        font-size: 7vw;
     }
     .purchase div {
         width: 50%;

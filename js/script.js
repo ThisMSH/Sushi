@@ -9,8 +9,8 @@ function ready() {
 	// Header part
 	const header = document.querySelector("header");
 
-	window.addEventListener ("scroll", function() {
-		header.classList.toggle ("sticky", window.scrollY > 0);
+	window.addEventListener("scroll", function () {
+		header.classList.toggle("sticky", window.scrollY > 0);
 	});
 
 	let menu = document.querySelector('#menu-icon');
@@ -27,24 +27,23 @@ function ready() {
 	};
 	// End of header part
 
-	// Go to Top button
-
+	// Start of Go to Top button
 	// Get the button:
 	let mybutton = document.getElementById("myTopBtn");
 
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
+	window.onscroll = function () { scrollFunction() };
 
 	function scrollFunction() {
+		// When the user scrolls down 1000px, the "Go to Top" button appears
 		if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
 			mybutton.style.display = "block";
 		} else {
 			mybutton.style.display = "none";
 		}
 	}
-
 	// End of Go to Top button
 
+	// Cart part
 	var removeCartItemsButton = document.getElementsByClassName("remove-button")
 	for (var i = 0; i < removeCartItemsButton.length; i++) {
 		var button = removeCartItemsButton[i]
@@ -95,7 +94,7 @@ function addItemToCart(itemName, itemPrice, itemImg) {
 			<img src="${itemImg}" alt="Image of your item">
 			<span>${itemName}</span>
 		</div>
-		<div class="item">
+		<div class="item item2">
 			<span class="item-price">${itemPrice}</span>
 			<button type="button" class="remove-button">Remove</button>
 		</div>`
@@ -114,7 +113,7 @@ function updateCartTotal() {
 		var price = parseFloat(priceItem.innerText.replace("$", ""))
 		total = total + price
 	}
-	total = Math.round(total * 100) / 100 //this shows 2 decimals only in the total
+	total = Math.round(total * 100) / 100 // This shows 2 decimals only in the total
 	document.getElementsByClassName("total-price")[0].innerText = total + " $"
 }
 // End of cart section
@@ -124,19 +123,19 @@ function category(evt, categoryID) {
 	var categoryContents = document.getElementsByClassName("category-section")
 	var categoryButton = document.getElementsByClassName("category-btn")
 
-	if(categoryID == "cat-section") {
-		for(var i = 0; i < categoryContents.length; i++) {
+	if (categoryID == "cat-section") {
+		for (var i = 0; i < categoryContents.length; i++) {
 			categoryContents[i].style.display = "flex"
 		}
-		
+
 		return
 	}
 
-	for(var i = 0; i < categoryContents.length; i++) {
+	for (var i = 0; i < categoryContents.length; i++) {
 		categoryContents[i].style.display = "none"
 	}
 
-	for(var i = 0; i < categoryButton.length; i++) {
+	for (var i = 0; i < categoryButton.length; i++) {
 		categoryButton[i].className = categoryButton[i].className.replace(" active", "")
 	}
 
@@ -149,3 +148,5 @@ function topFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// remove
