@@ -203,6 +203,10 @@ form {
 }
 .top-content p{
     margin-bottom: 50px;
+    -webkit-text-stroke-width: 0;
+    font-size: 50px;
+    font-weight: 400;
+    text-shadow: -1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000, 1.5px 1.5px 0 #000;
 }
 .top-content div img {
     width: 450px;
@@ -986,6 +990,8 @@ label {
         border-radius: 15px;
         display: flex;
         justify-content: flex-end;
+        text-shadow: 0 0 5px #000;
+        padding: 0 1%;
     }
     .des-mobile-2 {
         background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../img/home_page2.jpg);
